@@ -115,7 +115,7 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                "https://res.cloudinary.com/douqbebwk/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+                "https://res.cloudinary.com/douqbebwk/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
                 "https://images.unsplash.com",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
@@ -137,7 +137,6 @@ app.use((req, res, next) => {
     res.locals.error = req.flash('error');
     next();
 })
-
 
 app.use('/', userRoutes);
 app.use('/campgrounds', campgroundRoutes)
